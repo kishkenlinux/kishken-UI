@@ -14,6 +14,7 @@ FishUI.Window {
     minimumHeight: contentHeight
 
     modality: Qt.WindowModal
+    flags: Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint
 
     visible: false
 
@@ -22,6 +23,15 @@ FishUI.Window {
     property string description
     property string link: "https://cutefishos.com"
     property var contentHeight: _mainLayout.implicitHeight + control.header.height * 2
+
+    background.opacity: control.compositing ? 0.6 : 1.0
+
+    FishUI.WindowBlur {
+        view: control
+        geometry: Qt.rect(control.x, control.y, control.width, control.height)
+        windowRadius: control.windowRadius
+        enabled: control.compositing
+    }
 
     DragHandler {
         target: null
