@@ -297,6 +297,7 @@ Window {
                         Layout.topMargin: _header.spacing
                         image.smooth: false
                         image.antialiasing: true
+                        iconMargins: 6
                     }
 
                     RoundImageButton {
@@ -310,6 +311,7 @@ Window {
                         Layout.topMargin: _header.spacing
                         image.smooth: false
                         image.antialiasing: true
+                        iconMargins: 6
                     }
 
                     RoundImageButton {
@@ -321,6 +323,7 @@ Window {
                         Layout.topMargin: _header.spacing
                         image.smooth: false
                         image.antialiasing: true
+                        iconMargins: 6
                     }
                 }
 
