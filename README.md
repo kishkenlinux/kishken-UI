@@ -1,4 +1,4 @@
-# FishUI
+# KISHKEN-UI
 
 FishUI is a GUI library based on QQC2 (Qt Quick Controls 2), every Cutefish application uses it.
 
